@@ -6,8 +6,11 @@ import ViewApplications from "./pages/ViewApplications";
 import UploadApplications from "./pages/UploadApplications";
 import BulkUploadApplications from "./pages/BulkUploadApplications";
 import NewApplication from "./pages/NewApplication";
-import Shortlisting from "./pages/Shortlisting";
 import ScreeningTests from "./pages/ScreeningTests";
+import Shortlist from "./pages/Shortlist";
+import CreateCriteria from "./pages/CreateCriteria";
+import GenerateShortlist from "./pages/GenerateShortlist";
+
 // import UpdateNewApplication from "./pages/NewApplication";
 import WithApplication from "./pages/withApplicationForm";
 export const appRouter = createBrowserRouter([
@@ -20,7 +23,9 @@ export const appRouter = createBrowserRouter([
       { path: "/new-application", element: <NewApplication /> },
       { path: "/bulk-upload-applications", element: <BulkUploadApplications /> },
       { path: "/view-applications", element: <ViewApplications /> },
-      { path: "/shortlisting", element: <Shortlisting /> },
+      { path: "/create-shortlisting-criteria", element:<CreateCriteria/>},
+      { path: "/shortlist", element:<Shortlist/>},
+      {path: "/generate-shortlist", element:<GenerateShortlist/>},
       { path: "/screening-tests", element: <ScreeningTests /> },
       {path:"/view-applications/:id",element:<WithApplication/>}
     ],

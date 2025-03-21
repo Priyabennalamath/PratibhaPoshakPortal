@@ -16,7 +16,7 @@ const Navbar = () => {
         </li>
         <li className="nav-item"><Link to="/view-applications">View Applications</Link></li>
         <li className="nav-item dropdown">
-          <Link to="/shortlisting" className="dropbtn">Shortlisting</Link>
+          <Link to="/shortlist" className="dropbtn">Shortlisting</Link>
           <div className="dropdown-content">
             <Link to="/create-shortlisting-criteria">Create Shortlisting Criteria</Link>
             <Link to="/generate-shortlist">Generate Shortlist</Link>
